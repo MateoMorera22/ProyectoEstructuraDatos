@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 val intent= Intent(this,lista_autos::class.java)
                 startActivity(intent)
             }else{
-                Toast.makeText(baseContext,"Debe iniciar sesion para consultar los carros disponibles", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext,"Debe iniciar sesion para consultar los autos disponibles", Toast.LENGTH_SHORT).show()
             }
         }
 
