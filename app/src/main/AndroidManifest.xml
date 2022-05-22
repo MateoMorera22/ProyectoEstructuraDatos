@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalEstructuraDatos">
         <activity
+            android:name=".registrar"
+            android:exported="false" />
+        <activity
+            android:name=".log_in"
+            android:exported="false" />
+        <activity
+            android:name=".login2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
