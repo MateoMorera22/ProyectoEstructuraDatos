@@ -22,7 +22,7 @@ class log_in : AppCompatActivity() {
         auth = Firebase.auth
         val boton_regresar=findViewById<Button>(R.id.bn_regresar_l)
         boton_regresar.setOnClickListener {
-            val intent= Intent(this,registrar::class.java)
+            val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
         val txt_correo=findViewById<EditText>(R.id.etext_correo_l)
@@ -31,11 +31,11 @@ class log_in : AppCompatActivity() {
         boton_inicio_sesion.setOnClickListener {
             try {
                 val correo=txt_correo.text.toString().lowercase()
-                val contraseña=txt_contrasena.text.toString()
-                if(correo.isEmpty()||contraseña.isEmpty()){
+                val contrasena=txt_contrasena.text.toString()
+                if(correo.isEmpty()||contrasena.isEmpty()){
                     throw Exception("Los campos no pueden estar vacios")
                 }else{
-                    auth.signInWithEmailAndPassword(correo,contraseña)
+                    auth.signInWithEmailAndPassword(correo,contrasena)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
                                 Toast.makeText(baseContext, "Bienvenido", Toast.LENGTH_SHORT).show()
