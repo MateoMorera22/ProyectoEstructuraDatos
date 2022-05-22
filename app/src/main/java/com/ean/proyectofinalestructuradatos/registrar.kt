@@ -1,6 +1,6 @@
 package com.ean.proyectofinalestructuradatos
 
-import Mundo.contraseñas_iguales
+import Mundo.contrasenas_iguales
 import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,15 +9,18 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class registrar : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar)
 
         //Initialize Firebase Auth
-        //auth = Firebase.auth
+        auth = Firebase.auth
 
         //boton regresa al menu principal
         val boton_regresar=findViewById<Button>(R.id.bn_regresar_r)
@@ -37,7 +40,7 @@ class registrar : AppCompatActivity() {
                 if (correo_r.isEmpty() || contrasena_r.isEmpty() || confirmar.isEmpty()) {
                     throw Exception("los campos no pueden estar vacios")
                 } else {
-                    /*if (contraseñas_iguales(contrasena_r, confirmar)) {
+                    if (contrasenas_iguales(contrasena_r, confirmar)) {
                         auth.createUserWithEmailAndPassword(correo_r,contrasena_r)
                             .addOnCompleteListener(this) { task ->
                                 if (task.isSuccessful) {
@@ -57,7 +60,7 @@ class registrar : AppCompatActivity() {
 
                     } else {
                         throw Exception("las contraseñas no son iguales!")
-                    }*/
+                    }
 
                 }
             }

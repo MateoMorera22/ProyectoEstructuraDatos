@@ -1,5 +1,5 @@
 package Mundo
 
-fun contraseñas_iguales(contraseña_uno:String,contraseña_dos: String):Boolean {
-    return contraseña_uno == contraseña_dos
+fun contrasenas_iguales(contrasena_uno:String,contrasena_dos: String):Boolean {
+    return contrasena_uno == contrasena_dos
 }
