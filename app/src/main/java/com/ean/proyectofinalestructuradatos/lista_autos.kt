@@ -8,18 +8,24 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
 class lista_autos : AppCompatActivity() {
 
     val storage= Firebase.storage
+    private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_autos)
 
-        val storageRef = storage.reference
+
+        val conecDatabase = Firebase.database.reference
+
+
         val autos_a = ArrayList<String>()
         val listRef = storage.reference.child("autos")
         listRef.listAll()
