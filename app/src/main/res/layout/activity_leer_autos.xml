@@ -9,7 +9,7 @@
     tools:context=".leer_autos">
 
     <TextView
-        android:id="@+id/titleAuto"
+        android:id="@+id/etImageId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
@@ -19,7 +19,15 @@
     <ImageView
         android:id="@+id/imageview"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="665dp"
         android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C4C4C4"
+        android:text="Mostrar"
+        android:textColor="#14274E" />
 
 </LinearLayout>
