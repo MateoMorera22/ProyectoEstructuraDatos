@@ -15,8 +15,6 @@ import com.google.firebase.database.ktx.database
 //import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-
-
 class crear_autos : AppCompatActivity()  {
     // Write a message to the database
 
@@ -73,4 +71,3 @@ class crear_autos : AppCompatActivity()  {
 }
 
 
-}
