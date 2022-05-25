@@ -10,24 +10,23 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ktx.database
-
-
-//import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class crear_autos : AppCompatActivity()  {
-    // Write a message to the database
+class crear_autos:AppCompatActivity(){
 
     val database = Firebase.database
     val myRef = database.getReference("cars")
+
     private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_crear_autos)
+        setContentView(R.layout.activity_create_autos)
+
+
         // Initialize Firebase Auth
         auth = Firebase.auth
 
-        val boton_regresar=findViewById<Button>(R.id.bn_eliminar_auto)
+        val boton_regresar=findViewById<Button>(R.id.bn_volver_auto)
         boton_regresar.setOnClickListener {
             val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
@@ -57,7 +56,7 @@ class crear_autos : AppCompatActivity()  {
                         usuario.child("Nombre").setValue(librito.getnombre())
                         usuario.child("numero").setValue(librito.getnumero())
                         usuario.child("fecha").setValue(librito.getfecha())
-
+                        throw java.lang.Exception("Auto registrado con exito.")
                     }
 
                 }

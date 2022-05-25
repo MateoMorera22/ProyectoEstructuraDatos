@@ -79,7 +79,7 @@
                 android:textColor="#14274E" />
 
             <Button
-                android:id="@+id/bn_crear_autos"
+                android:id="@+id/bn_create_autos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C4C4C4"

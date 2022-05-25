@@ -25,6 +25,9 @@
             android:name=".log_in"
             android:exported="false" />
         <activity
+            android:name=".crear_autos"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

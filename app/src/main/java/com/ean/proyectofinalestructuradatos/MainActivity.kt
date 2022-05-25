@@ -44,17 +44,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //solo puede entrar a crear los autos si esta logeado
-        val boton_crear=findViewById<Button>(R.id.bn_crear_autos)
-        boton_crear.setOnClickListener {
+        //Este boton me lleva a la actividad de crear solo logeado
+        val boton_crear_auto = findViewById<Button>(R.id.bn_create_autos)
+       boton_crear_auto.setOnClickListener {
             if(auth.currentUser!=null){
                 val intent= Intent(this,crear_autos::class.java)
                 startActivity(intent)
             }else{
-                Toast.makeText(baseContext,"Debe iniciar sesion para crear un auto", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext,"Debe iniciar sesion para crear autos...", Toast.LENGTH_SHORT).show()
             }
         }
-
 
         val boton_cerrar_sesion=findViewById<Button>(R.id.bn_cerrar_sesion_am)
         boton_cerrar_sesion.setOnClickListener {

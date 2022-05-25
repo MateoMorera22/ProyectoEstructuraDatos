@@ -3,13 +3,6 @@ package Auto
 
 import java.util.*
 
-fun contraseñas_iguales(contraseña_uno:String,contraseña_dos: String):Boolean{
-    return contraseña_uno==contraseña_dos
-}
-
-
-
-
 class Auto {
     private var codigo=0
     private var nombre=""
