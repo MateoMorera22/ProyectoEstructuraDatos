@@ -8,22 +8,22 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ListView
 import android.widget.Toast
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ktx.database
+//import com.google.firebase.database.DatabaseReference
+//import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
 class lista_autos : AppCompatActivity() {
 
     val storage= Firebase.storage
-    private lateinit var database: DatabaseReference
+    //private lateinit var database: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_autos)
 
 
-        val conecDatabase = Firebase.database.reference
+        //val conecDatabase = Firebase.database.reference
 
 
         val autos_a = ArrayList<String>()
@@ -49,7 +49,7 @@ class lista_autos : AppCompatActivity() {
                 Toast.makeText(this,parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show()
                 val intent= Intent(this,leer_autos::class.java)
                 intent.putExtra("TITULO AUTO",nombre_auto)//enviando nombre del autos a leer auto
-                //enviar informacion extra  a leer_libro, nombre auto
+                //enviar informacion extra  a leer_autos, nombre auto
                 startActivity(intent)
 
             }

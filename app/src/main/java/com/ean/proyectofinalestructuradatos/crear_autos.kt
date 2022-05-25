@@ -8,13 +8,14 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.ktx.database
+//import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
 
 
 class crear_autos : AppCompatActivity()  {
     // Write a message to the database
+    /*
     val database = Firebase.database
     val myRef = database.getReference("Libros")
     private lateinit var auth: FirebaseAuth;
@@ -65,7 +66,7 @@ class crear_autos : AppCompatActivity()  {
 
         }
     }
-}
+}*/
 
 
 }
