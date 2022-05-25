@@ -79,12 +79,21 @@
                 android:textColor="#14274E" />
 
             <Button
+                android:id="@+id/bn_crear_autos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C4C4C4"
+                android:text="Crear Autos"
+                android:textColor="#14274E" />
+
+            <Button
                 android:id="@+id/bn_cerrar_sesion_am"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#C4C4C4"
                 android:text="Cerrar Sesion"
                 android:visibility="invisible" />
+
 
         </LinearLayout>
 
