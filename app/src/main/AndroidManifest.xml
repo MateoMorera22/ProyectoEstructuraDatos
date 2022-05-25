@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalEstructuraDatos">
         <activity
+            android:name=".leer_autos"
+            android:exported="false" />
+        <activity
             android:name=".lista_autos"
             android:exported="false" />
         <activity

@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#14274E"
+    android:orientation="vertical"
     tools:context=".lista_autos">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/list_view_autos_a"
+        android:layout_width="match_parent"
+        android:layout_height="665dp" />
+
+    <Button
+        android:id="@+id/bn_actualizar_a"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#C4C4C4"
+        android:text="Actualizar"
+        android:textColor="#14274E" />
+
+</LinearLayout>
