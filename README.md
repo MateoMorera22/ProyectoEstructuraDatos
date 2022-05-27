@@ -11,8 +11,20 @@ De igual manera, internamente el concesionario por medio de la app puede interac
 
 Nota: Para consultar la base de datos interna por favor abrir Firebase (Realtime Database)
 
+**TECNOLOGIAS Y HERRAMIENTAS**
+Base de datos: Firebase(Firebase Realtime Database)
+IDE: Android Studio
+Lenguaje: Kotlin.
+
 **MOCKUP**
 
 https://www.figma.com/proto/gtr9qySDUwwlY6J4NoFXDb/Untitled?node-id=1%3A2&scaling=scale-down&page-id=0%3A1
 
 Edición Mockup: https://www.figma.com/file/gtr9qySDUwwlY6J4NoFXDb/Untitled?node-id=0%3A1
+
+
+Conclusion:
+
+-Gracias al conocimiento adquirido en la unidad de estudio de Estructura de Datos, logramos crear una app para aumentar las ventas de un concesionario de carros, en este caso para BMW.
+
+-Se logro una conexion estable con las tecnologias de Firebase(Storage, Realtime Database y Authentication); Ademas se implemento el diseño planeado en los Mockups. En coclusion se usaron y los metodos, tecnologias y herramientas usados en la clase durante el semestre.
