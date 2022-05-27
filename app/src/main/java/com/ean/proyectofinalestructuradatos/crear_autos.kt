@@ -22,7 +22,6 @@ class crear_autos:AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_autos)
 
-
         // Initialize Firebase Auth
         auth = Firebase.auth
 

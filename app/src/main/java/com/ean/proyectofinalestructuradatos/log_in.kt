@@ -18,17 +18,19 @@ class log_in : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
 
-        // Initialize Firebase Auth
+
         auth = Firebase.auth
         val boton_regresar=findViewById<Button>(R.id.bn_regresar_l)
         boton_regresar.setOnClickListener {
             val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+
         val txt_correo=findViewById<EditText>(R.id.etext_correo_l)
         val txt_contrasena=findViewById<EditText>(R.id.etext_contrasena_l)
         val boton_inicio_sesion=findViewById<Button>(R.id.bn_entrar_l)
         boton_inicio_sesion.setOnClickListener {
+
             try {
                 val correo=txt_correo.text.toString().lowercase()
                 val contrasena=txt_contrasena.text.toString()
