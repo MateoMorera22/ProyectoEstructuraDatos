@@ -49,12 +49,12 @@ class crear_autos:AppCompatActivity(){
                 }
                 else{
                     if(auth.currentUser!=null){
-                        var librito=Auto(codigo,nombre,numero,fecha)
-                        val usuario=myRef.child(auth.uid!!).child(librito.getcodigo().toString())
-                        usuario.child("Codigo").setValue(librito.getcodigo())
-                        usuario.child("Nombre").setValue(librito.getnombre())
-                        usuario.child("numero").setValue(librito.getnumero())
-                        usuario.child("fecha").setValue(librito.getfecha())
+                        var auto=Auto(codigo,nombre,numero,fecha)
+                        val usuario=myRef.child(auth.uid!!).child(auto.getcodigo().toString())
+                        usuario.child("Codigo").setValue(auto.getcodigo())
+                        usuario.child("Nombre").setValue(auto.getnombre())
+                        usuario.child("numero").setValue(auto.getnumero())
+                        usuario.child("fecha").setValue(auto.getfecha())
                         throw java.lang.Exception("Auto registrado con exito.")
                     }
 
